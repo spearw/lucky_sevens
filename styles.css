@@ -1,0 +1,31 @@
+h1 {
+  margin-bottom: 3rem;
+}
+body {
+  font-family: "Comic Sans MS";
+  text-align: center;
+  font-weight: bold;
+}
+table {
+  border: 5px groove gray;
+  max-width: 50% !important;
+  margin: auto;
+  text-align: left;
+}
+caption {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+button {
+  display: block !important;
+  margin: 2rem auto;
+}
+input {
+  margin-left: 2rem;
+  max-width: 6rem;
+}
+caption {
+  border-top: 1px solid black;
+  margin-top: 2rem;
+}
