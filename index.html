@@ -15,7 +15,15 @@
       <form name="bet" onsubmit="return validateInput();" class="form-inline">
         <div class="form-group">
           <label for="startingBet">Starting Bet:</label>
-          <input type="number" class="form-control" id="startingBet" />
+          <div class="input-group mb-3">
+                <div class="input-group-addon">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control" id="startingBet" />
+                <div class="input-group-addon">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
         </div>
         <button type="submit" id="playButton" class="btn btn-default">
           Play
