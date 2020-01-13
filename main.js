@@ -25,7 +25,7 @@ function validateInput() {
   if (startingBet == "" || isNaN(startingBet) || startingBet <= 0) {
     alert("Starting Bet must be a number greater than 0.");
     document.forms["bet"]["startingBet"].parentElement.className =
-      "form-group has-error";
+      "input-group mb-3 has-error";
     document.forms["bet"]["startingBet"].focus();
     return false;
   } else {
