@@ -19,6 +19,11 @@ function play(startingBet) {
   return values;
 }
 
+function removeError() {
+  document.forms["bet"]["startingBet"].parentElement.className =
+    "input-group mb-3";
+}
+
 function validateInput() {
   var startingBet = document.forms["bet"]["startingBet"].value;
 
@@ -29,6 +34,7 @@ function validateInput() {
     document.forms["bet"]["startingBet"].focus();
     return false;
   } else {
+    removeError();
     /* play returns an array of the required values */
     values = play(startingBet);
     document.getElementById("results").style.display = "table";
